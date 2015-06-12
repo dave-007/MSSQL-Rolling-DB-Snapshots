@@ -1,3 +1,12 @@
+/*
+PURPOSE: I couldn't find any samples to insert orders into AdventureWorks, so made this one.
+Note that it doesn't create the SalesOrderDetail records, 
+and only adds foreign key values for existing customers, credit cards, etc.
+It doesn't create any other related records.
+AUTHOR: David Cobb (sql@davidcobb.net)
+SOURCE: https://github.com/dave-007/MSSQL-Rolling-DB-Snapshots
+
+*/
 USE [AdventureWorks2008R2]
 INSERT INTO [Sales].[SalesOrderHeader]
            ([RevisionNumber]
